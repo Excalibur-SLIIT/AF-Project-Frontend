@@ -1,24 +1,24 @@
 {
-  "name": "af-project-frontend",
+  "name": "AF-Project-Frontend",
   "version": "1.0.0",
-  "description": "AF-Project-Frontend",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Excalibur-SLIIT/AF-Project-Frontend.git"
-  },
-  "author": "REG_WD_24",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "parcel": "^2.0.0-nightly.733"
-  },
   "dependencies": {
+    "@parcel/transformer-js": "^2.0.0-alpha.3",
     "axios": "^0.21.1",
     "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.3.1",
+    "parcel-bundler": "^1.12.5"
   }
 }

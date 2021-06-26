@@ -1,12 +1,10 @@
-import './App.css';
-import RoutesComponent from './Routes/RoutesComponent';
+import React from 'react';
+import RoutesComponent from './src/Routes/RoutesComponent'
 
-function App() {
+export default function App() {
     return (
-        <div className="App">
-            <RoutesComponent />
+        <div>
+            <RoutesComponent/>
         </div>
-    );
+    )
 }
-
-export default App;
