@@ -5,6 +5,7 @@ import Home from '../Pages/Home/Home';
 import ResearcherSignUp from '../Pages/ResearcherSignUp/ResearcherSignUp';
 import SignIn from '../Pages/SignIn/SignIn';
 import WSConductorSignUp from '../Pages/WSConductorSignUp/WSConductorSignUp';
+import AdminDashBoard from '../Pages/AdminPages/dashboardPage'
 
 class RoutesComponent extends Component {
     render() {
@@ -16,6 +17,9 @@ class RoutesComponent extends Component {
                     <Route path="/researchersignup" exact component={ResearcherSignUp} />
                     <Route path="/wsconductorsignup" exact component={WSConductorSignUp} />
                     <Route path="/signin" exact component={SignIn} />
+
+                    <Route path="/admin/dashboard" exact component={AdminDashBoard} />
+
                 </Switch>
             </Router>
         )
