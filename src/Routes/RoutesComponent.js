@@ -17,7 +17,8 @@ class RoutesComponent extends Component {
                     <Route path="/researchersignup" exact component={ResearcherSignUp} />
                     <Route path="/wsconductorsignup" exact component={WSConductorSignUp} />
                     <Route path="/signin" exact component={SignIn} />
-
+                    
+                    {/* ADMIN */}
                     <Route path="/admin/dashboard" exact component={AdminDashBoard} />
 
                 </Switch>
