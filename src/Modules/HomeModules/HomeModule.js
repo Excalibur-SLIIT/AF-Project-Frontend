@@ -19,49 +19,51 @@ export class HomeModule extends Component {
     render() {
         return (
             <div>
-                <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
-                    "delay": 2500,
-                    "disableOnInteraction": false
-                }} pagination={{
-                    "clickable": true
-                }} navigation={true} className="mySwiper">
-                    <SwiperSlide>
-                        <div class="card-body">
-                            <h5 class="card-title">Conference Details</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div class="card-body">
-                            <h5 class="card-title">Event Details</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div class="card-body">
-                            <h5 class="card-title">Speakers</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div class="card-body">
-                            <h5 class="card-title">Tickets</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </SwiperSlide>
-                </Swiper>
+                <div class="slider d-flex justify-content-center">
+                    <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
+                        "delay": 2500,
+                        "disableOnInteraction": false
+                    }} pagination={{
+                        "clickable": true
+                    }} navigation={true} className="mySwiper">
+                        <SwiperSlide>
+                            <div class="card-body">
+                                <h5 class="card-title">Conference Details</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div class="card-body">
+                                <h5 class="card-title">Event Details</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div class="card-body">
+                                <h5 class="card-title">Speakers</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div class="card-body">
+                                <h5 class="card-title">Tickets</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
             </div>
         )
     }
