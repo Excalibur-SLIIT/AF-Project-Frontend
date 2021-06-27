@@ -13,16 +13,16 @@ export class Header extends Component {
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav p-2">
                                 <li class="nav-item">
-                                    <button type="button" class="btn btn-dark m-1">Home</button>
+                                    <button type="button" class="btn btn-outline-dark m-1">Home</button>
                                 </li>
                                 <li class="nav-item">
-                                    <button type="button" class="btn btn-primary m-1">Conferences</button>
+                                    <button type="button" class="btn btn-outline-primary m-1">Conferences</button>
                                 </li>
                                 <li class="nav-item">
-                                    <button type="button" class="btn btn-secondary m-1">Events</button>
+                                    <button type="button" class="btn btn-outline-secondary m-1">Events</button>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <button type="button" class="btn btn-success m-1">Contacts</button>
+                                    <button type="button" class="btn btn-outline-success m-1">Contacts</button>
                                 </li>
                             </ul>
                         </div>
