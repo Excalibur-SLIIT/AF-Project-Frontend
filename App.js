@@ -1,10 +1,14 @@
-import React from 'react';
-import RoutesComponent from './src/Routes/RoutesComponent'
+import React, { Component } from 'react';
+import RoutesComponent from './src/Routes/RoutesComponent';
 
-export default function App() {
-    return (
-        <div>
-            <RoutesComponent/>
-        </div>
-    )
+class App extends Component {
+    render() {
+        return (
+            <div>
+                <RoutesComponent/>
+            </div>
+        )
+    }
 }
+
+export default App
