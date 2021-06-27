@@ -8,7 +8,7 @@ export default class dashboardPage extends Component {
         return (
             <div>
                  <HeaderModule />
-                <Dashboard />
+                 <Dashboard />
                 <FooterModule />
                 
             </div>
