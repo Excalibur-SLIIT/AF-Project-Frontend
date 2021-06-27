@@ -1,62 +1,33 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-export class Footer extends Component {
+class FooterModule extends Component {
     render() {
         return (
             <div>
                 <div class="container-fluid text-lg-start bg-light position-absolute top-100 start-50 translate-middle shadow-lg p-3 mb-5 bg-body rounded">
-
                     <div class="container text-center text-md-start mt-5">
                         <div class="row mt-3">
                             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                                <h3 class="text-uppercase fw-bold mb-4">
-                                    ICAF 2021
-                                </h3>
-                                <p>
-                                    Powered by EXCALIBUR
-                                </p>
+                                <h3 class="text-uppercase fw-bold mb-4">ICAF 2021</h3>
+                                <p>Powered by EXCALIBUR</p>
                             </div>
-
                             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                                <h6 class="text-uppercase fw-bold mb-4">
-                                    Topics
-                                </h6>
-                                <p>
-                                    <a href="#!" class="text-reset">Node</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">React</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Vue</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Laravel</a>
-                                </p>
+                                <h6 class="text-uppercase fw-bold mb-4">Pages</h6>
+                                <p><a href="/" class="text-reset">Home</a></p>
+                                <p><a href="/signin" class="text-reset">SignIn</a></p>
+                                <p><a href="/attendeesignup" class="text-reset">Attendee SignUp</a></p>
+                                <p><a href="/wsconductorsignup" class="text-reset">WS Conductor SignUp</a></p>
+                                <p><a href="researchersignup" class="text-reset">Researcher SignUp</a></p>
                             </div>
-
                             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                                <h6 class="text-uppercase fw-bold mb-4">
-                                    Useful links
-                                </h6>
-                                <p>
-                                    <a href="#!" class="text-reset">Pricing</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Settings</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Orders</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Help</a>
-                                </p>
+                                <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                                <p><a href="#!" class="text-reset">Pricing</a></p>
+                                <p><a href="#!" class="text-reset">Settings</a></p>
+                                <p><a href="#!" class="text-reset">Orders</a></p>
+                                <p><a href="#!" class="text-reset">Help</a></p>
                             </div>
-
                             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                                <section
-                                    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-                                >
+                                <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
                                     <div>
                                         <a href="" class="me-4 text-reset">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -86,15 +57,12 @@ export class Footer extends Component {
                                     </div>
                                 </section>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
             </div>
         )
     }
 }
 
-export default Footer
+export default FooterModule

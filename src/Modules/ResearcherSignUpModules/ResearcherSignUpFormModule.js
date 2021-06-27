@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-class AttendeeSignUpFormModule extends Component {
+class ResearcherSignUpFormModule extends Component {
     render() {
         return (
             <div>
                 <div class="col-5 mx-auto text-start">
-                    <h1>Attendee Sign Up</h1>
+                    <h1>Researcher Sign Up</h1>
                     <form class="row g-3">
                         <div class="col-12">
                             <label for="username" class="form-label">Username</label>
@@ -28,13 +28,25 @@ class AttendeeSignUpFormModule extends Component {
                             <input type="text" class="form-control" id="mobile" name="mobile" />
                         </div>
                         <div class="col-12">
+                            <label for="researchpapertopic" class="form-label">Research Paper Topic</label>
+                            <input type="text" class="form-control" id="researchpapertopic" name="researchpapertopic" />
+                        </div>
+                        <div class="col-12">
+                            <label for="researchpaperdescription" class="form-label">Research Paper Description</label>
+                            <textarea type="text" class="form-control" id="researchpaperdescription" name="researchpaperdescription" />
+                        </div>
+                        <div class="col-12">
+                            <label for="researchpaper" class="form-label">Upload Paper</label>
+                            <input type="file" accept="application/PDF" class="form-control" id="researchpaper" name="researchpaper" />
+                        </div>
+                        <div class="col-12">
                             <button type="submit" class="btn btn-primary">Sign Up</button>
                         </div>
                     </form>
                 </div>
-            </div >
+            </div>
         )
     }
 }
 
-export default AttendeeSignUpFormModule
+export default ResearcherSignUpFormModule

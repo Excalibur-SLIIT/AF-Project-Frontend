@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import AttendeeSignUpFormModule from '../../Modules/AttendeeSignUpModules/AttendeeSignUpFormModule';
+import ResearcherSignUpFormModule from '../../Modules/ResearcherSignUpModules/ResearcherSignUpFormModule';
 import HeaderModule from '../../Modules/CommonModules/HeaderModule';
 import FooterModule from '../../Modules/CommonModules/FooterModule';
 
-class AttendeeSignUp extends Component {
+class ResearcherSignUp extends Component {
     render() {
         return (
             <div>
                 <HeaderModule />
-                <AttendeeSignUpFormModule />
+                <ResearcherSignUpFormModule />
                 <FooterModule />
             </div>
         )
     }
 }
 
-export default AttendeeSignUp
+export default ResearcherSignUp

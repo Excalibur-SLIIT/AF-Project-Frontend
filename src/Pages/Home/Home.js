@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import Header from '../../CommonModules/Header';
-import Footer from '../../CommonModules/Footer';
+import HeaderModule from '../../Modules/CommonModules/HeaderModule';
+import FooterModule from '../../Modules/CommonModules/FooterModule';
 
-export class Home extends Component {
+class Home extends Component {
     render() {
         return (
             <div>
-                <Header />
-                <Footer />
+                <HeaderModule />
+                <h1>Home Page</h1>
+                <FooterModule />
             </div>
         )
     }
