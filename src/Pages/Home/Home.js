@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import HeaderModule from '../../Modules/CommonModules/HeaderModule';
 import FooterModule from '../../Modules/CommonModules/FooterModule';
+import HomeModule from '../../Modules/HomeModules/HomeModule';
 
 class Home extends Component {
     render() {
         return (
             <div>
                 <HeaderModule />
-                <h1>Home Page</h1>
+                <HomeModule />
                 <FooterModule />
             </div>
         )
