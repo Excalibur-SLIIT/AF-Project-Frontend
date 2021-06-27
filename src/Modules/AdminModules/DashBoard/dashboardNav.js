@@ -5,7 +5,7 @@ export default function dashboardNav() {
     <div className="container shadow-lg p-3 mx-auto my-3 bg-body rounded">
       <div class="row">
         <h3 className="text-center text-dark mt-5 mb-5 display-3">
-          ADMIN DASHBOARD
+          Admin Dashboard
           <hr />
         </h3>
       </div>
