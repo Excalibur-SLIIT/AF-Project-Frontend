@@ -2,13 +2,15 @@ import React from "react";
 
 export default function dashboardNav() {
   return (
-    <div className="container">
-      <h3 className="text-center text-dark mt-5 mb-5 display-3">
-        ADMIN DASHBOARD
-        <hr />
-      </h3>
-      <div className="row">
-        <div className="col-lg-4 col-md-4 col-sm-12">
+    <div className="container shadow-lg p-3 mx-auto my-3 bg-body rounded">
+      <div class="row">
+        <h3 className="text-center text-dark mt-5 mb-5 display-3">
+          ADMIN DASHBOARD
+          <hr />
+        </h3>
+      </div>
+      <div className="row d-flex justify-content-around m-5">
+        <div className="col-md-4">
           <div
             class="card"
             style={{
@@ -32,7 +34,7 @@ export default function dashboardNav() {
             </div>
           </div>
         </div>
-        <div className="col-lg-4 col-md-4 col-sm-12">
+        <div className="col-md-4">
           <div
             class="card"
             style={{
@@ -56,7 +58,7 @@ export default function dashboardNav() {
             </div>
           </div>
         </div>
-        <div className="col-lg-4 col-md-4 col-sm-12">
+        <div className="col-md-4">
           <div
             class="card"
             style={{
@@ -80,7 +82,9 @@ export default function dashboardNav() {
             </div>
           </div>
         </div>
-        <div className="col-lg-4 col-md-4 col-sm-12">
+      </div>
+      <div class="row d-flex justify-content-around m-5">
+        <div className="col-md-4">
           <br></br>
           <div
             class="card"
@@ -105,7 +109,7 @@ export default function dashboardNav() {
             </div>
           </div>
         </div>
-        <div className="col-lg-4 col-md-4 col-sm-12">
+        <div className="col-md-4">
           <br></br>
           <div
             class="card"
@@ -131,7 +135,7 @@ export default function dashboardNav() {
           </div>
         </div>
 
-        <div className="col-lg-4 col-md-4 col-sm-12">
+        <div className="col-md-4">
           <br></br>
           <div
             class="card"
