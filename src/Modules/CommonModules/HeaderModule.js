@@ -6,7 +6,7 @@ class HeaderModule extends Component {
             <div>
                 <nav class="navbar navbar-dark bg-dark p-5">
                     <div class="container-fluid">
-                        <p class="navbar-brand font-monospace fs-2 position-absolute top-50 start-50 translate-middle"><b>ICAF 2021 Official Website</b></p>
+                        <p class="navbar-brand font-monospace fs-2 position-absolute top-50 start-50 translate-middle"><b>|| ICAF 2021 Official Website ||</b></p>
                         <button class="position-absolute top-0 start-0 navbar-toggler p-2 m-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>

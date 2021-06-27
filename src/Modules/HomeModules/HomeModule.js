@@ -19,7 +19,7 @@ export class HomeModule extends Component {
     render() {
         return (
             <div>
-                <div class="slider d-flex justify-content-center">
+                <div class="slider d-flex justify-content-center shadow p-3 mb-5 bg-body rounded">
                     <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
                         "delay": 2500,
                         "disableOnInteraction": false

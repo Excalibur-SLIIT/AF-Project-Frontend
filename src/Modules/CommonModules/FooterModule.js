@@ -4,12 +4,12 @@ class FooterModule extends Component {
     render() {
         return (
             <div>
-                <div class="container-fluid text-lg-start bg-light position-absolute top-100 start-50 translate-middle shadow-lg p-3 mb-5 bg-body rounded">
+                <div class="container-fluid text-lg-start bg-light position-absolute top-100 start-50 translate-middle shadow-lg p-4 mb-4 bg-body rounded">
                     <div class="container text-center text-md-start mt-5">
                         <div class="row mt-3">
                             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                                 <h3 class="text-uppercase fw-bold mb-4">ICAF 2021</h3>
-                                <p>Powered by EXCALIBUR</p>
+                                <p>Powered by <b>EXCALIBUR</b></p>
                             </div>
                             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                                 <h6 class="text-uppercase fw-bold mb-4">Pages</h6>
