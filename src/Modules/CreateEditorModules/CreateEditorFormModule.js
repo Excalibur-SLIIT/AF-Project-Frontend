@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class CreateEditorFormModule extends Component {
     render() {
         return (
-            <div class="col-5 mx-auto p-4" >
+            <div class="col-5 mx-auto p-4 m-5" >
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="createeditortab" data-bs-toggle="tab" data-bs-target="#createeditor" type="button" role="tab" aria-controls="createeditor" aria-selected="true">Create Editor</button>

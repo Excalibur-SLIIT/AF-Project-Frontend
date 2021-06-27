@@ -4,7 +4,7 @@ class ResearcherSignUpFormModule extends Component {
     render() {
         return (
             <div>
-                <div class="col-5 mx-auto text-start p-4">
+                <div class="col-5 mx-auto text-start p-4 m-5">
                     <h1>Researcher Sign Up</h1>
                     <form class="row g-3">
                         <div class="col-12">

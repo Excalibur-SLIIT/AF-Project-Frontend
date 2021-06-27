@@ -4,8 +4,8 @@ class FooterModule extends Component {
     render() {
         return (
             <div>
-                <div class="container-fluid text-lg-start bg-light shadow-lg p-4 mb-0 bg-body rounded">
-                    <div class="container text-center text-md-start mt-5">
+                <div class="container-fluid text-lg-start bg-light self-align-end shadow-lg p-4 mb-0 bg-body rounded">
+                    <div class="row text-center text-md-start mt-5">
                         <div class="row mt-3">
                             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                                 <h3 class="text-uppercase fw-bold mb-4">ICAF 2021</h3>
