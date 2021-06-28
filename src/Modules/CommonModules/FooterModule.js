@@ -22,6 +22,7 @@ class FooterModule extends Component {
                                 <p><a href="/addevent" class="text-reset">Add Event</a></p>
                                 <p><a href="/admin/dashboard" class="text-reset">Dashboard</a></p>
                                 <p><a href="/eventdetails" class="text-reset">Event Details</a></p>
+                                <p><a href="/editevent" class="text-reset">Edit Event</a></p>
                             </div>
                             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                                 <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>

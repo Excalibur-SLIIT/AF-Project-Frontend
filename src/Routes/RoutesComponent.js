@@ -9,6 +9,7 @@ import AdminDashBoard from '../Pages/AdminPages/dashboardPage'
 import CreateSystemManagers from '../Pages/CreateSystemManagers/CreateSystemManagers';
 import AddEvent from '../Pages/EditorPages/AddEvent';
 import EventDetails from '../Pages/EditorPages/EventDetails';
+import EditEvent from '../Pages/EditorPages/EditEvent';
 
 class RoutesComponent extends Component {
     render() {
@@ -24,6 +25,7 @@ class RoutesComponent extends Component {
                     <Route path="/createsystemmanager" exact component={CreateSystemManagers} />
                     <Route path="/addevent" exact component={AddEvent} />
                     <Route path="/eventdetails" exact component={EventDetails} />
+                    <Route path="/editevent" exact component={EditEvent} />
                 </Switch>
             </Router>
         )
