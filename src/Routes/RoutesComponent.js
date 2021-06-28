@@ -8,6 +8,7 @@ import WSConductorSignUp from '../Pages/WSConductorSignUp/WSConductorSignUp';
 import AdminDashBoard from '../Pages/AdminPages/dashboardPage'
 import CreateSystemManagers from '../Pages/CreateSystemManagers/CreateSystemManagers';
 import AddEvent from '../Pages/EditorPages/AddEvent';
+import EventDetails from '../Pages/EditorPages/EventDetails';
 
 class RoutesComponent extends Component {
     render() {
@@ -22,6 +23,7 @@ class RoutesComponent extends Component {
                     <Route path="/admin/dashboard" exact component={AdminDashBoard} />
                     <Route path="/createsystemmanager" exact component={CreateSystemManagers} />
                     <Route path="/addevent" exact component={AddEvent} />
+                    <Route path="/eventdetails" exact component={EventDetails} />
                 </Switch>
             </Router>
         )
