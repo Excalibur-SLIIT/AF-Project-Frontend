@@ -19,6 +19,7 @@ class FooterModule extends Component {
                                 <p><a href="/wsconductorsignup" class="text-reset">WS Conductor SignUp</a></p>
                                 <p><a href="/researchersignup" class="text-reset">Researcher SignUp</a></p>
                                 <p><a href="/createsystemmanager" class="text-reset">Create System Managers</a></p>
+                                <p><a href="/addevent" class="text-reset">Add Event</a></p>
                                 <p><a href="/admin/dashboard" class="text-reset">Dashboard</a></p>
                             </div>
                             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
