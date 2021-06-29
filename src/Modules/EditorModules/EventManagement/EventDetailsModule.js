@@ -12,7 +12,7 @@ export class EventDetailsModule extends Component {
                                 <th scope="col" class="col-md-2 p-3">Event Name</th>
                                 <th scope="col" class="col-md-2 p-3">Speaker</th>
                                 <th scope="col" class="col-md-2 p-3">Time</th>
-                                <th scope="col" class="col-md-2 p-3">Actions</th>
+                                <th scope="col" class="col-md-3 p-3">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -23,7 +23,8 @@ export class EventDetailsModule extends Component {
                                 <td>@mdo</td>
                                 <td>
                                     <button type="button" class="btn btn-success mx-1">Accept</button>
-                                    <button type="button" class="btn btn-danger mx-1">Decline</button>
+                                    <button type="button" class="btn btn-warning mx-1">Edit</button>
+                                    <button type="button" class="btn btn-danger mx-1">Delete</button>
                                 </td>
                             </tr>
                             <tr>
@@ -33,7 +34,8 @@ export class EventDetailsModule extends Component {
                                 <td>@fat</td>
                                 <td>
                                     <button type="button" class="btn btn-success mx-1">Accept</button>
-                                    <button type="button" class="btn btn-danger mx-1">Decline</button>
+                                    <button type="button" class="btn btn-warning mx-1">Edit</button>
+                                    <button type="button" class="btn btn-danger mx-1">Delete</button>
                                 </td>
                             </tr>
                             <tr>
@@ -43,7 +45,8 @@ export class EventDetailsModule extends Component {
                                 <td>@fat</td>
                                 <td>
                                     <button type="button" class="btn btn-success mx-1">Accept</button>
-                                    <button type="button" class="btn btn-danger mx-1">Decline</button>
+                                    <button type="button" class="btn btn-warning mx-1">Edit</button>
+                                    <button type="button" class="btn btn-danger mx-1">Delete</button>
                                 </td>
                             </tr>
                             <tr>
@@ -53,7 +56,8 @@ export class EventDetailsModule extends Component {
                                 <td>@fat</td>
                                 <td>
                                     <button type="button" class="btn btn-success mx-1">Accept</button>
-                                    <button type="button" class="btn btn-danger mx-1">Decline</button>
+                                    <button type="button" class="btn btn-warning mx-1">Edit</button>
+                                    <button type="button" class="btn btn-danger mx-1">Delete</button>
                                 </td>
                             </tr>
                             <tr>
@@ -63,7 +67,8 @@ export class EventDetailsModule extends Component {
                                 <td>@mdo</td>
                                 <td>
                                     <button type="button" class="btn btn-success mx-1">Accept</button>
-                                    <button type="button" class="btn btn-danger mx-1">Decline</button>
+                                    <button type="button" class="btn btn-warning mx-1">Edit</button>
+                                    <button type="button" class="btn btn-danger mx-1">Delete</button>
                                 </td>
                             </tr>
                             <tr>
@@ -73,7 +78,8 @@ export class EventDetailsModule extends Component {
                                 <td>@mdo</td>
                                 <td>
                                     <button type="button" class="btn btn-success mx-1">Accept</button>
-                                    <button type="button" class="btn btn-danger mx-1">Decline</button>
+                                    <button type="button" class="btn btn-warning mx-1">Edit</button>
+                                    <button type="button" class="btn btn-danger mx-1">Delete</button>
                                 </td>
                             </tr>
                             <tr>
@@ -83,7 +89,8 @@ export class EventDetailsModule extends Component {
                                 <td>@mdo</td>
                                 <td>
                                     <button type="button" class="btn btn-success mx-1">Accept</button>
-                                    <button type="button" class="btn btn-danger mx-1">Decline</button>
+                                    <button type="button" class="btn btn-warning mx-1">Edit</button>
+                                    <button type="button" class="btn btn-danger mx-1">Delete</button>
                                 </td>
                             </tr>
                         </tbody>

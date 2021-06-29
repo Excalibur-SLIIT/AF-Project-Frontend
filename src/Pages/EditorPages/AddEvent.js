@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from "../../Modules/CommonModules/HeaderModule";
 import Footer from "../../Modules/CommonModules/FooterModule";
-import Eventbody from "../../Modules/EditorModules/AddEventModule"
+import Eventbody from "../../Modules/EditorModules/EventManagement/AddEventModule"
 
 export class AddEvent extends Component {
     render() {
