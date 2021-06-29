@@ -13,7 +13,7 @@ class HeaderModule extends Component {
                         <div class="collapse navbar-collapse p-2" id="navbarNavDropdown">
                             <ul class="navbar-nav p-2 m-2">
                                 <li class="nav-item">
-                                    <button type="button" class="btn btn-outline-light m-1">Home</button>
+                                    <a href="/"><button type="button" class="btn btn-outline-light m-1">Home</button></a>
                                 </li>
                                 <li class="nav-item">
                                     <button type="button" class="btn btn-outline-light m-1">Conferences</button>

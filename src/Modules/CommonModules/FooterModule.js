@@ -13,7 +13,6 @@ class FooterModule extends Component {
                             </div>
                             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                                 <h6 class="text-uppercase fw-bold mb-4">Pages</h6>
-                                <p><a href="/" class="text-reset">Home</a></p>
                                 <p><a href="/signin" class="text-reset">SignIn</a></p>
                                 <p><a href="/attendeesignup" class="text-reset">Attendee SignUp</a></p>
                                 <p><a href="/wsconductorsignup" class="text-reset">WS Conductor SignUp</a></p>
