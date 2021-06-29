@@ -8,11 +8,11 @@ export class EventDetailsModule extends Component {
                     <table class="table table-hover">
                         <thead class="table-dark">
                             <tr>
-                                <th scope="col-md-4">#</th>
-                                <th scope="col-md-6">Event Name</th>
-                                <th scope="col-md-4">Speaker</th>
-                                <th scope="col-md-12">Time</th>
-                                <th scope="col-md-4">Actions</th>
+                                <th scope="col" class="col-md-1 p-3">#</th>
+                                <th scope="col" class="col-md-2 p-3">Event Name</th>
+                                <th scope="col" class="col-md-2 p-3">Speaker</th>
+                                <th scope="col" class="col-md-2 p-3">Time</th>
+                                <th scope="col" class="col-md-2 p-3">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -21,42 +21,70 @@ export class EventDetailsModule extends Component {
                                 <td>Mark</td>
                                 <td>Otto</td>
                                 <td>@mdo</td>
-                                <td>Accept</td>
+                                <td>
+                                    <button type="button" class="btn btn-success mx-1">Accept</button>
+                                    <button type="button" class="btn btn-danger mx-1">Decline</button>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
                                 <td>Jacob</td>
                                 <td>Thornton</td>
                                 <td>@fat</td>
-                                <td>Accept</td>
+                                <td>
+                                    <button type="button" class="btn btn-success mx-1">Accept</button>
+                                    <button type="button" class="btn btn-danger mx-1">Decline</button>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
                                 <td>Jacob</td>
                                 <td>Thornton</td>
                                 <td>@fat</td>
-                                <td>Accept</td>
+                                <td>
+                                    <button type="button" class="btn btn-success mx-1">Accept</button>
+                                    <button type="button" class="btn btn-danger mx-1">Decline</button>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">4</th>
                                 <td>Jacob</td>
                                 <td>Thornton</td>
                                 <td>@fat</td>
-                                <td>Accept</td>
+                                <td>
+                                    <button type="button" class="btn btn-success mx-1">Accept</button>
+                                    <button type="button" class="btn btn-danger mx-1">Decline</button>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">5</th>
                                 <td>Mark</td>
                                 <td>Otto</td>
                                 <td>@mdo</td>
-                                <td>Decline</td>
+                                <td>
+                                    <button type="button" class="btn btn-success mx-1">Accept</button>
+                                    <button type="button" class="btn btn-danger mx-1">Decline</button>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">6</th>
                                 <td>Mark</td>
                                 <td>Otto</td>
                                 <td>@mdo</td>
-                                <td>Accept</td>
+                                <td>
+                                    <button type="button" class="btn btn-success mx-1">Accept</button>
+                                    <button type="button" class="btn btn-danger mx-1">Decline</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>
+                                    <button type="button" class="btn btn-success mx-1">Accept</button>
+                                    <button type="button" class="btn btn-danger mx-1">Decline</button>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
