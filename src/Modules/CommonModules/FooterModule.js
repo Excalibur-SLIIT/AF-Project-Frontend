@@ -23,6 +23,7 @@ class FooterModule extends Component {
                                 <p><a href="/eventdetails" class="text-reset">Event Details</a></p>
                                 <p><a href="/editevent" class="text-reset">Edit Event</a></p>
                                 <p><a href="/reviewer/pendingrequests" class="text-reset">Reviewer Pending Requests</a></p>
+                                <p><a href="/reviewer/acceptedrequests" class="text-reset">Reviewer Accepted Requests</a></p>
                             </div>
                             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                                 <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>

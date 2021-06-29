@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import HeaderModule from '../../Modules/CommonModules/HeaderModule';
 import FooterModule from '../../Modules/CommonModules/FooterModule';
-import BaseTabModule from '../../Modules/ReviewerPendingRequestsModule/BaseTabModule/BaseTabModule';
+import BaseTabModule from '../../Modules/ReviewerAcceptedRequestsModules/BaseTabModule/BaseTabModule';
 
-class ReviewerPendingRequests extends Component {
+class ReviewerAcceptedRequests extends Component {
     render() {
         return (
             <div>
@@ -15,4 +15,4 @@ class ReviewerPendingRequests extends Component {
     }
 }
 
-export default ReviewerPendingRequests
+export default ReviewerAcceptedRequests

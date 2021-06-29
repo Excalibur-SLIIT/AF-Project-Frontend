@@ -11,6 +11,7 @@ import AddEvent from '../Pages/EditorPages/AddEvent';
 import EventDetails from '../Pages/EditorPages/EventDetails';
 import EditEvent from '../Pages/EditorPages/EditEvent';
 import ReviewerPendingRequests from '../Pages/ReviewerPendingRequests/ReviewerPendingRequests';
+import ReviewerAcceptedRequests from '../Pages/ReviewerAcceptedRequests/ReviewerAcceptedRequests';
 
 class RoutesComponent extends Component {
     render() {
@@ -28,6 +29,7 @@ class RoutesComponent extends Component {
                     <Route path="/eventdetails" exact component={EventDetails} />
                     <Route path="/editevent" exact component={EditEvent} />
                     <Route path="/reviewer/pendingrequests" exact component={ReviewerPendingRequests} />
+                    <Route path="/reviewer/acceptedrequests" exact component={ReviewerAcceptedRequests} />
                 </Switch>
             </Router>
         )
