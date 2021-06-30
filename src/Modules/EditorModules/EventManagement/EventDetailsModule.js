@@ -21,7 +21,8 @@ export default class EventDetailsModule extends Component {
     componentDidMount() {
         axios.get('http://localhost:5000/api/event/')
             .then(response => {
-                this.setState({items: response.data.results})
+                this.setState([{ items: response.data }])
+                console.log(response.data);
             })
             .catch(error => {
                 alert(error.message)
@@ -31,7 +32,7 @@ export default class EventDetailsModule extends Component {
 
     itemList() {
         return this.state.items.map(currentItems => {
-            return <Item items={currentItems} key={currentItems._id} />;
+            return <Item equipments={currentItems} key={currentItems._id} />;
         })
     }
 
