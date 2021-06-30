@@ -3,11 +3,11 @@ import axios from 'axios';
 
 const Item = props => (
     <tr>
-        <td>{props.item.name}</td>
-        <td>{props.item.speaker}</td>
-        <td>{props.item.topic}</td>
-        <td>{props.item.date}</td>
-        <td>{props.item.time}</td>
+        <td>{props.items.name}</td>
+        <td>{props.items.speaker}</td>
+        <td>{props.items.topic}</td>
+        <td>{props.items.date}</td>
+        <td>{props.items.time}</td>
     </tr>
 );
 
@@ -15,8 +15,8 @@ export default class EventDetailsModule extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            items: [],
-        }
+            items: []
+        };
     }
     componentDidMount() {
         axios.get('http://localhost:5000/api/event/')
@@ -29,12 +29,11 @@ export default class EventDetailsModule extends Component {
             })
 
     }
-    itemList() {
-        return this.state.items.map(currentitems => {
-            return <Item item={currentitems}
-                key={currentitems._id} />;
-        })
 
+    itemList() {
+        return this.state.items.map(currentItems => {
+            return <Item equipments={currentItems} key={currentItems._id} />;
+        })
     }
 
     render() {
@@ -44,7 +43,6 @@ export default class EventDetailsModule extends Component {
                     <table class="table table-hover">
                         <thead>
                             <tr>
-                                <th>Index</th>
                                 <th>Event Name</th>
                                 <th>Speaker</th>
                                 <th>Topic</th>
@@ -53,7 +51,7 @@ export default class EventDetailsModule extends Component {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>{this.itemList()}</tr>
+                            {this.itemList()}
                         </tbody>
                     </table>
                 </div>
