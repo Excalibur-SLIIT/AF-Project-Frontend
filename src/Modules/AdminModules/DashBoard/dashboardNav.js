@@ -27,9 +27,8 @@ export default function dashboardNav() {
                 the bulk of the card's content.
               </p>
               <div class="text-center">
-                <button type="button" class="btn btn-outline-dark">
-                  MANAGE
-                </button>
+                <a  class="btn btn-outline-dark" href = "/admin/Editor">MANAGE</a>
+              
               </div>
             </div>
           </div>
@@ -51,9 +50,7 @@ export default function dashboardNav() {
                 the bulk of the card's content.
               </p>
               <div class="text-center">
-                <button type="button" class="btn btn-outline-dark">
-                  MANAGE
-                </button>
+              <a  class="btn btn-outline-dark" href = "/admin/Reviewer">MANAGE</a>
               </div>
             </div>
           </div>

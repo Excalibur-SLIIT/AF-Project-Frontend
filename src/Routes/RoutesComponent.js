@@ -14,6 +14,8 @@ import ReviewerPendingRequests from '../Pages/ReviewerPendingRequests/ReviewerPe
 import ReviewerAcceptedRequests from '../Pages/ReviewerAcceptedRequests/ReviewerAcceptedRequests';
 import Workshop from '../Pages/Workshop/Workshop';
 import ResearchPaper from '../Pages/ResearchPaper/ResearchPaper';
+import AdminEditor from  '../Pages/AdminPages/EditorAdmin'
+import AdminReviewer from '../Pages/AdminPages/ReviewerAdmin'
 
 class RoutesComponent extends Component {
     render() {
@@ -26,6 +28,8 @@ class RoutesComponent extends Component {
                     <Route path="/wsconductorsignup" exact component={WSConductorSignUp} />
                     <Route path="/signin" exact component={SignIn} />
                     <Route path="/admin/dashboard" exact component={AdminDashBoard} />
+                    <Route path="/admin/Editor" exact component={AdminEditor} />
+                    <Route path="/admin/Reviewer" exact component={AdminReviewer} />
                     <Route path="/createsystemmanager" exact component={CreateSystemManagers} />
                     <Route path="/addevent" exact component={AddEvent} />
                     <Route path="/eventdetails" exact component={EventDetails} />
