@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class Reviewerfunction extends Component {
+export default class Attendeefunction extends Component {
     render() {
         return (
             <div>
@@ -8,17 +8,16 @@ export default class Reviewerfunction extends Component {
                     <div class="col-md-6 mx-auto" >
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="createreviewertab" data-bs-toggle="tab" data-bs-target="#createreviewer" type="button" role="tab" aria-controls="createreviewer" aria-selected="true">Create Reviewer</button>
+                                <button class="nav-link active" id="createattendeetab" data-bs-toggle="tab" data-bs-target="#createattendee" type="button" role="tab" aria-controls="createattendee" aria-selected="true">Create Attendee</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="updateReviewertab" data-bs-toggle="tab" data-bs-target="#updateReviewer" type="button" role="tab" aria-controls="updateReviewer" aria-selected="false">Update Reviewer</button>
+                                <button class="nav-link" id="updateAttendeetab" data-bs-toggle="tab" data-bs-target="#updateAttendee" type="button" role="tab" aria-controls="updateAttendee" aria-selected="false">Update Attendee</button>
                             </li>
-                            
                         </ul>
                         <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="createreviewer" role="tabpanel" aria-labelledby="createreviewertab">
+                            <div class="tab-pane fade show active" id="createattendee" role="tabpanel" aria-labelledby="createattendeetab">
                                 <div class="text-start">
-                                    <h1>Create Reviewer</h1>
+                                    <h1>Create Attendee</h1>
                                     <form class="row g-3">
                                         <div class="col-12">
                                             <label for="username" class="form-label">Username</label>
@@ -43,12 +42,14 @@ export default class Reviewerfunction extends Component {
                                         <div class="col-12">
                                             <button type="submit" class="btn btn-primary">Create</button>
                                         </div>
-                                    </form> 
+                                    </form>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="updateReviewer" role="tabpanel" aria-labelledby="updateReviewertab">
+
+
+                            <div class="tab-pane fade" id="updateAttendee" role="tabpanel" aria-labelledby="updateAttendeetab">
                                 <div class="text-start">
-                                    <h1>Update Reviewer</h1>
+                                    <h1>Update Attendee</h1>
                                     <form class="row g-3">
                                         <div class="col-12">
                                             <label for="username" class="form-label">Username</label>
@@ -76,7 +77,7 @@ export default class Reviewerfunction extends Component {
                                     </form>
                                 </div>
                             </div>
-                            
+                           
                         </div>
                     </div>
                 </div>

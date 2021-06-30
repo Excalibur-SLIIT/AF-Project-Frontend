@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import HeaderModule from '../../Modules/CommonModules/HeaderModule';
 import FooterModule from '../../Modules/CommonModules/FooterModule';
-import ReviewerFunction from '../../Modules/AdminModules/userReviewerAdmin/Reviewerfunction'
-import AllReviewer from '../../Modules/AdminModules/userReviewerAdmin/allReviewer'
+import AllWorkShopCon from '../../Modules/AdminModules/userWorkShopAdmin/allWorkShopCon';
+import WorkShopConfunction from '../../Modules/AdminModules/userWorkShopAdmin/WorkShopConfunction';
 
-export default class ReviewerAdmin extends Component {
+export default class WorkshopConAdmin extends Component {
     render() {
         return (
             <div>
                 <HeaderModule />
-                <ReviewerFunction />
-                <AllReviewer />
+                <WorkShopConfunction />
+                <AllWorkShopCon />
                 <FooterModule />
             </div>
         )

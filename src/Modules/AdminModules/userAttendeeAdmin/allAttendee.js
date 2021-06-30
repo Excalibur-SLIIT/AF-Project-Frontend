@@ -1,26 +1,26 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 
-export default class allReviewer extends Component {
+export default class allAttendee extends Component {
   
     constructor(props){
         super(props);
         this.state= {
             users: [],
-            reviewers: [],
+            attendees: [],
             
         }
-    } 
+    }
   
     componentDidMount(){
         axios.get('http://localhost:5000/api/user/')
         .then(response =>{
             console.log('users:', response.data.results);
-            this.setState({reviewers: response.data.results})
+            this.setState({attendees: response.data.results})
             
             let filteredUsers = [];
-            filteredUsers = response.data.results.filter((user) => user.role === "reviewer");
-            this.setState({reviewers: filteredUsers})
+            filteredUsers = response.data.results.filter((user) => user.role === "attendee");
+            this.setState({attendees: filteredUsers})
             console.log('userrrs:', filteredUsers);
         });
 
@@ -63,7 +63,7 @@ export default class allReviewer extends Component {
                                 </tr>
                             </thead>
                             <tbody>
-                                {this.state.reviewers.length > 0 && this.state.reviewers.map((item, index)=>(
+                                {this.state.attendees.length > 0 && this.state.attendees.map((item, index)=>(
                                 
                                 <tr>
                                 <th scope="row">{index}</th>

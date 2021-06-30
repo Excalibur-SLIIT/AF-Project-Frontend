@@ -27,7 +27,7 @@ export default function dashboardNav() {
                 the bulk of the card's content.
               </p>
               <div class="text-center">
-                <a  class="btn btn-outline-dark" href = "/admin/Editor">MANAGE</a>
+                <a  class="btn btn-outline-dark" href = "/admin/editor">MANAGE</a>
               
               </div>
             </div>
@@ -50,7 +50,7 @@ export default function dashboardNav() {
                 the bulk of the card's content.
               </p>
               <div class="text-center">
-              <a  class="btn btn-outline-dark" href = "/admin/Reviewer">MANAGE</a>
+              <a  class="btn btn-outline-dark" href = "/admin/reviewer">MANAGE</a>
               </div>
             </div>
           </div>
@@ -72,9 +72,7 @@ export default function dashboardNav() {
                 the bulk of the card's content.
               </p>
               <div class="text-center">
-                <button type="button" class="btn btn-outline-dark">
-                  MANAGE
-                </button>
+              <a  class="btn btn-outline-dark" href = "/admin/researcher">MANAGE</a>
               </div>
             </div>
           </div>
@@ -99,9 +97,7 @@ export default function dashboardNav() {
                 the bulk of the card's content.
               </p>
               <div class="text-center">
-                <button type="button" class="btn btn-outline-dark">
-                  MANAGE
-                </button>
+              <a  class="btn btn-outline-dark" href = "/admin/workshopcon">MANAGE</a>
               </div>
             </div>
           </div>
@@ -118,15 +114,15 @@ export default function dashboardNav() {
             }}
           >
             <div class="card-body text-center">
-              <h5 class="card-title fw-bold">ADTENDEE</h5>
+              <h5 class="card-title fw-bold">ATTENDEE</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
               <div class="text-center">
-                <button type="button" class="btn btn-outline-dark">
-                  MANAGE
-                </button>
+              <div class="text-center">
+              <a  class="btn btn-outline-dark" href = "/admin/attendee">MANAGE</a>
+              </div>
               </div>
             </div>
           </div>
@@ -150,9 +146,7 @@ export default function dashboardNav() {
                 the bulk of the card's content.
               </p>
               <div class="text-center">
-                <button type="button" class="btn btn-outline-dark">
-                  MANAGE
-                </button>
+              <a  class="btn btn-outline-dark" href = "/admin/conference">MANAGE</a>
               </div>
             </div>
           </div>

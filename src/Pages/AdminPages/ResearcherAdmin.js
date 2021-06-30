@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import HeaderModule from '../../Modules/CommonModules/HeaderModule';
 import FooterModule from '../../Modules/CommonModules/FooterModule';
-import ReviewerFunction from '../../Modules/AdminModules/userReviewerAdmin/Reviewerfunction'
-import AllReviewer from '../../Modules/AdminModules/userReviewerAdmin/allReviewer'
+import Researcherfunction from '../../Modules/AdminModules/userResearcherAdmin/Researcherfunction';
+import AllResearcher from '../../Modules/AdminModules/userResearcherAdmin/allResearcher';
 
-export default class ReviewerAdmin extends Component {
+export default class ResearcherAdmin extends Component {
     render() {
         return (
             <div>
                 <HeaderModule />
-                <ReviewerFunction />
-                <AllReviewer />
+                <Researcherfunction />
+                <AllResearcher />
                 <FooterModule />
             </div>
         )

@@ -16,6 +16,10 @@ import Workshop from '../Pages/Workshop/Workshop';
 import ResearchPaper from '../Pages/ResearchPaper/ResearchPaper';
 import AdminEditor from  '../Pages/AdminPages/EditorAdmin'
 import AdminReviewer from '../Pages/AdminPages/ReviewerAdmin'
+import AdminResearcher from '../Pages/AdminPages/ResearcherAdmin'
+import AdminWorkShopCon from '../Pages/AdminPages/WorkshopConAdmin'
+import AdminAttendee from '../Pages/AdminPages/AttendeeAdmin'
+import AdminConference from '../Pages/AdminPages/Conference'
 
 class RoutesComponent extends Component {
     render() {
@@ -30,6 +34,10 @@ class RoutesComponent extends Component {
                     <Route path="/admin/dashboard" exact component={AdminDashBoard} />
                     <Route path="/admin/Editor" exact component={AdminEditor} />
                     <Route path="/admin/Reviewer" exact component={AdminReviewer} />
+                    <Route path="/admin/researcher" exact component={AdminResearcher} />
+                    <Route path="/admin/workshopcon" exact component={AdminWorkShopCon} />
+                    <Route path="/admin/attendee" exact component={AdminAttendee} />
+                    <Route path="/admin/conference" exact component={AdminConference} />
                     <Route path="/createsystemmanager" exact component={CreateSystemManagers} />
                     <Route path="/addevent" exact component={AddEvent} />
                     <Route path="/eventdetails" exact component={EventDetails} />
