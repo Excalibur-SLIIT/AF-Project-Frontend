@@ -67,7 +67,7 @@ export class AddEventModule extends Component {
             .then(res => console.log(res.data))
             .catch(e => console.log(e));
 
-        window.location('./eventdetails')
+        window.location = './eventdetails'
     }
     render() {
         return (
