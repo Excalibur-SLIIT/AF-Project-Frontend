@@ -4,7 +4,7 @@ class FooterModule extends Component {
     render() {
         return (
             <div>
-                <div class="container-fluid text-lg-start bg-light self-align-end shadow-lg p-1 mb-0 bg-body rounded">
+                <div class="container-fluid text-lg-start bg-light self-align-end p-1 mb-0 bg-body rounded">
                     <div class="row text-center text-md-start mt-5">
                         <div class="row mt-3">
                             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
@@ -24,6 +24,8 @@ class FooterModule extends Component {
                                 <p><a href="/editevent" class="text-reset">Edit Event</a></p>
                                 <p><a href="/reviewer/pendingrequests" class="text-reset">Reviewer Pending Requests</a></p>
                                 <p><a href="/reviewer/acceptedrequests" class="text-reset">Reviewer Accepted Requests</a></p>
+                                <p><a href="/researchpaper" class="text-reset">Research Paper</a></p>
+                                <p><a href="/workshop" class="text-reset">Workshop</a></p>
                             </div>
                             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                                 <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
