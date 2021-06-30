@@ -4,7 +4,7 @@ class FooterModule extends Component {
     render() {
         return (
             <div>
-                <div class="container-fluid text-lg-start bg-light self-align-end p-1 mb-0 bg-body rounded">
+                <div class="container-fluid text-lg-start bg-light self-align-end p-5 mb-0 bg-body rounded">
                     <div class="row text-center text-md-start mt-5">
                         <div class="row mt-3">
                             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
