@@ -16,7 +16,6 @@ class ResearcherSignUpFormModule extends Component {
             email: "",
             mobile: "",
             password: "",
-            profile: "",
             topic: "",
             description: "",
             file: ""
@@ -25,38 +24,88 @@ class ResearcherSignUpFormModule extends Component {
 
     onValueChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
-    onRegister(e) {
+    onRegister =  (e) => {
 
         e.preventDefault();
 
-        const user = {
-            role,
-            username: this.state.username,
-            fname: this.state.fname,
-            lname: this.state.lname,
-            password: this.state.password,
-            email: this.state.email,
-            mobile: this.state.mobile,
-            profile: this.state.profile,
-        }
+        // const user = {
+        //     role,
+        //     username: this.state.username,
+        //     fname: this.state.fname,
+        //     lname: this.state.lname,
+        //     password: this.state.password,
+        //     email: this.state.email,
+        //     mobile: this.state.mobile,
+        //     profile: this.state.profile,
+        // }
 
-        axios.post('http://localhost:5000/api/user/', user)
-            .then(res => console.log(res.data))
+        // axios.post('http://localhost:5000/api/user/', user)
+        //     .then(res => console.log(res.data))
+        //     .catch(e => console.log(e));
+
+        // const paper = {
+        //     conductor: this.state.username,
+        //     topic: this.state.topic,
+        //     description: this.state.description,
+        //     file: this.state.file,
+        // }
+
+        // axios.post('http://localhost:5000/api/researchpaper/', paper)
+        //     .then(res => console.log(res.data))
+        //     .catch(e => console.log(e));
+
+
+        const user = new FormData();
+        user.append("username",this.state.username);
+        user.append("password",this.state.password);
+        user.append("role",this.state.role);
+        user.append("fname",this.state.fname);
+        user.append("lname",this.state.lname);
+        user.append("email",this.state.email);
+        user.append("mobile",this.state.mobile);
+        user.append("image", this.state.image);
+        
+        const userConfig = {
+            headers: {
+                'content-type': 'multipart/form-data'
+            }
+        };
+
+        axios.post('http://localhost:5000/api/user/', user, userConfig)
+            .then(res => {
+                localStorage.setItem("x-auth-token", res.data.token)
+            })
             .catch(e => console.log(e));
 
+
+        const config = {
+            headers: {
+                "x-auth-token": localStorage.getItem("x-auth-token")
+            }
+        };
+
         const paper = {
-            conductor: this.state.username,
             topic: this.state.topic,
             description: this.state.description,
             file: this.state.file,
         }
 
-        axios.post('http://localhost:5000/api/researchpaper/', paper)
-            .then(res => console.log(res.data))
+        axios.post('http://localhost:5000/api/research_paper/', paper, config)
+            .then(res => {
+                if (res.data.status == "successful") {
+                    window.location = "./signin";
+                } else {
+                    alert(res.data.description);
+                }
+            })
             .catch(e => console.log(e));
 
-        window.location = "./signin";
     }
+
+    onFileChange = (e) => {
+        this.setState({ [e.target.name]: e.target.files[0] })
+    };
+
     render() {
         return (
             <div>
@@ -68,13 +117,17 @@ class ResearcherSignUpFormModule extends Component {
                                 <label for="username" class="form-label">Username</label>
                                 <input type="text" class="form-control" id="username" name="username" value={this.state.username} onChange={(e) => { this.onValueChange(e); }} />
                             </div>
+                            <div class="col-12">
+                                <label for="username" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" name="password" value={this.state.password} onChange={(e) => { this.onValueChange(e); }} />
+                            </div>
                             <div class="col-md-6">
                                 <label for="fname" class="form-label">First Name</label>
                                 <input type="text" class="form-control" id="fname" name="fname" value={this.state.fname} onChange={(e) => { this.onValueChange(e); }} />
                             </div>
                             <div class="col-md-6">
                                 <label for="lname" class="form-label">Last Name</label>
-                                <input type="password" class="form-control" id="lname" name="lname" value={this.state.lname} onChange={(e) => { this.onValueChange(e); }} />
+                                <input type="text" class="form-control" id="lname" name="lname" value={this.state.lname} onChange={(e) => { this.onValueChange(e); }} />
                             </div>
                             <div class="col-md-6">
                                 <label for="email" class="form-label">Email</label>
@@ -86,7 +139,7 @@ class ResearcherSignUpFormModule extends Component {
                             </div>
                             <div class="col-12">
                                 <label for="profile" class="form-label">Upload Profile Picture</label>
-                                <input type="file" accept="image/png" class="form-control" id="profile" name="profile" value={this.state.profile} onChange={(e) => { this.onValueChange(e); }} />
+                                <input type="file" accept="image/png" class="form-control" id="image" name="image" onChange={(e) => { this.onFileChange(e); }} />
                             </div>
                             <div class="col-12">
                                 <label for="topic" class="form-label">Research Paper Topic</label>
@@ -98,7 +151,7 @@ class ResearcherSignUpFormModule extends Component {
                             </div>
                             <div class="col-12">
                                 <label for="file" class="form-label">Upload Paper</label>
-                                <input type="file" accept="application/PDF" class="form-control" id="file" name="file" value={this.state.file} onChange={(e) => { this.onValueChange(e); }} />
+                                <input type="file" accept="application/PDF" class="form-control" id="file" name="file" onChange={(e) => { this.onFileChange(e); }} />
                             </div>
                             <div class="col-12">
                                 <button type="submit" class="btn btn-primary">Sign Up</button>
